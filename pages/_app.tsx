@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import image3 from "../public/image3.jpg";
-import image4 from "../public/image4.jpg";
+import image7 from "../public/image7.jpg";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
       ></div>
       <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${image4.src})` }}
+        style={{ backgroundImage: `url(${image7.src})` }}
       ></div>
     </main>
   );
