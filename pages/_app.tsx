@@ -2,8 +2,8 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import image1 from "../public/image1.jpg";
-import image2 from "../public/image2.jpg";
+import image3 from "../public/image3.jpg";
+import image4 from "../public/image4.jpg";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -19,11 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-8">
       <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${image1.src})` }}
+        style={{ backgroundImage: `url(${image3.src})` }}
       ></div>
       <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${image2.src})` }}
+        style={{ backgroundImage: `url(${image4.src})` }}
       ></div>
     </main>
   );
