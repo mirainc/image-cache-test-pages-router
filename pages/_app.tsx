@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import image1 from "../public/image1.jpg";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -16,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main
       className="flex min-h-screen flex-col items-center justify-between p-24 bg-contain bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url("/image1.jpg")' }}
+      style={{ backgroundImage: `url(${image1.src})` }}
     ></main>
   );
 }
