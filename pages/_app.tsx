@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
   // Reload the page to check for an updated image.
   useEffect(() => {
     setTimeout(() => {
-      // router.reload();
+      router.reload();
     }, 5000);
   }, [router]);
 
@@ -19,12 +19,20 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-8">
       <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(/image3.jpg)` }}
+      ></div>
+      <div
+        className="flex-1 w-full bg-contain bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(/image2.jpg)` }}
+      ></div>
+      {/* <div
+        className="flex-1 w-full bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${image3.src})` }}
       ></div>
       <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${image7.src})` }}
-      ></div>
+      ></div> */}
     </main>
   );
 }
