@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
   // Reload the page to check for an updated image.
   useEffect(() => {
     setTimeout(() => {
-      router.reload();
+      // router.reload();
     }, 5000);
   }, [router]);
 
