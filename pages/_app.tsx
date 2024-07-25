@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import image1 from "../public/image1.jpg";
+import sandwichImage from "../public/Coho-Salmon-Sandwich.jpg";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -15,9 +16,15 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [router]);
 
   return (
-    <main
-      className="flex min-h-screen flex-col items-center justify-between p-24 bg-contain bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${image1.src})` }}
-    ></main>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-8">
+      <div
+        className="flex-1 w-full bg-contain bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${image1.src})` }}
+      ></div>
+      <div
+        className="flex-1 w-full bg-contain bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${sandwichImage.src})` }}
+      ></div>
+    </main>
   );
 }
