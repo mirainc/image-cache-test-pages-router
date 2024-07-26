@@ -19,11 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-8">
       <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/image3.jpg)` }}
+        style={{ backgroundImage: `url(/image1.jpg)` }}
       ></div>
       <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/image2.jpg)` }}
+        style={{ backgroundImage: `url(/image4.jpg)` }}
       ></div>
       {/* <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
