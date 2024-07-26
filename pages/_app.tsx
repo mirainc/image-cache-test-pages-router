@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
       ></div>
       <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/image4.jpg)` }}
+        style={{ backgroundImage: `url(/image5.jpg)` }}
       ></div>
       {/* <div
         className="flex-1 w-full bg-contain bg-center bg-no-repeat"
